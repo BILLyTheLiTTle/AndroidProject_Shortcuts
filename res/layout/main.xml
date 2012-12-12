@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent" 
+	    	android:stretchColumns="*"
+	    	android:layout_weight="0.2">
+	<TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<TextView
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="@string/hello" />
+   	</TableRow>
+    
+	<TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<Button
+	        android:id="@+id/restart"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/restart" 
+	        android:onClick="restart"/>
+	    <Button
+	        android:id="@+id/shutdown"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/shutdown"
+	        android:onClick="shutdown" />
+	</TableRow>
+	
+	<TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<Button
+	        android:id="@+id/silentNvibrate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/silentNvibrate" 
+	        android:onClick="silentNvibrate"/>
+	    <Button
+	        android:id="@+id/loud"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/loud"
+	        android:onClick="loud" />
+	</TableRow>
+	
+	<TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/special" />
+    	</TableRow>
+    
+    <TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<Button
+	        android:id="@+id/bootloader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/bootloader"
+	        android:onClick="bootloader" />
+    	<Button
+	        android:id="@+id/development"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/development"
+	        android:onClick="development" />
+    </TableRow>
+    
+    <TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<Button
+	        android:id="@+id/notification_on"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/notification_on"
+	        android:onClick="showNotification" />
+    	<Button
+	        android:id="@+id/notification_off"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/notification_off"
+	        android:onClick="hideNotification" />
+    </TableRow>
+    
+    <TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    	<Button
+	        android:id="@+id/enable_lockscreen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/enable_lockscreen"
+	        android:onClick="enableLockscreen" />
+    	<Button
+	        android:id="@+id/disable_lockscreen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/disable_lockscreen"
+	        android:onClick="disableLockscreen" />
+    </TableRow>
+    
+    <TableRow 
+ 		android:layout_height="wrap_content" 
+ 		android:baselineAligned="false">
+    <Button
+	        android:id="@+id/start_chat_apps"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/start_chat_apps"
+	        android:onClick="startChatApps" />
+    <Button
+	        android:id="@+id/stop_chat_apps"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:text="@string/stop_chat_apps"
+	        android:onClick="stopChatApps" />
+    </TableRow>
+    
+    </TableLayout>

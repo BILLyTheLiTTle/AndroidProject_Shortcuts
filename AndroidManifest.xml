@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.plus.bt11598712305047159305"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.Dialog"
+        android:name="tsapalos11598712.bill3050.shortcuts.MethodsApplication" android:enabled="true">
+        <activity            
+            android:name="tsapalos11598712.bill3050.shortcuts.CustomShortcutsActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver 
+            android:enabled="true"
+            android:name="tsapalos11598712.bill3050.shortcuts.StartupReceiver" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity 
+            android:noHistory="true" 
+            android:name="tsapalos11598712.bill3050.shortcuts.helper.HelperActivity" 
+            android:excludeFromRecents="true">
+        </activity>
+        
+    </application>
+
+</manifest>

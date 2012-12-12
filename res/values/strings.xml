@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Πάτα το κουμπί!!!</string>
+    <string name="app_name">Συντομεύσεις</string>
+    <string name="special">Ειδικές Συντομεύσεις:</string>
+    <string name="restart">Επανεκκίνηση</string>
+    <string name="shutdown">Απενεργοποίηση</string>
+    <string name="silentNvibrate">Αθόρυβο/Δόνηση</string>
+    <string name="loud">Θορυβώδες</string>
+    <string name="bootloader">Bootloader</string>
+    <string name="development">Ανάπτυξη</string>
+    <string name="notification_on">+Notification</string>
+    <string name="notification_off">-Notification</string>
+    <string name="enable_lockscreen">+Κλείδωμα</string>
+    <string name="disable_lockscreen">-Κλείδωμα</string>
+    <string name="start_chat_apps">Start Chat Apps</string>
+    <string name="stop_chat_apps">Stop Chat Apps</string>
+    
+    <string name="radio">Κεραία</string>
+    <string name="volume">Ήχος</string>
+    <string name="reboot">Reboot</string>
+    <string name="app">App</string>
+    <string name="top">Top</string>
+
+</resources>
