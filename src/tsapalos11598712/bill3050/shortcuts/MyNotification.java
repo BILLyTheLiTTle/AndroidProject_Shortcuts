@@ -53,13 +53,14 @@ public class MyNotification extends Notification {
 	}
 	
 	public void setListeners(RemoteViews view){
-		//radio listener
+		//TODO screencapture listener
+	        //adb shell /system/bin/screencap -p storage/sdcard0/SimpleAndroidTest/test.png
 		Intent radio=new Intent(ctx, tsapalos11598712.bill3050.shortcuts.helper.HelperActivity.class);
 		radio.putExtra("DO", "radio");
 		PendingIntent pRadio = PendingIntent.getActivity(ctx, 0, radio, 0);
 		view.setOnClickPendingIntent(R.id.radio, pRadio);
 		
-		//volume listener
+		//TODO screen size listener
 		Intent volume=new Intent(ctx, tsapalos11598712.bill3050.shortcuts.helper.HelperActivity.class);
 		volume.putExtra("DO", "volume");
 		PendingIntent pVolume = PendingIntent.getActivity(ctx, 1, volume, 0);

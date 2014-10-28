@@ -46,7 +46,6 @@ public class CustomShortcutsActivity extends Activity {
 	private int requestedAction=-1;
 	
     /** Called when the activity is first created. */
-    @SuppressWarnings("deprecation")
 	/* (non-Javadoc)
      * @see android.app.Activity#onCreate(android.os.Bundle)
      */
@@ -60,9 +59,6 @@ public class CustomShortcutsActivity extends Activity {
         mApp=(MethodsApplication)this.getApplication();
         
         mAudioManager = (AudioManager)getSystemService(AUDIO_SERVICE);
-        
-        KeyguardManager mKeyGuardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
-		mLock = mKeyGuardManager.newKeyguardLock("this.class");
     }
     
     /**
